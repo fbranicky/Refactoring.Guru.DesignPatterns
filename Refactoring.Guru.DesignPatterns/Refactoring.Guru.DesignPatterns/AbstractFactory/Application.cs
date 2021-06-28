@@ -2,6 +2,11 @@
 
 namespace Refactoring.Guru.DesignPatterns.AbstractFactory
 {
+    /// <summary>
+    /// An abstract factory creates objects that are somehow related without specifying concrete implementations.
+    /// In this example, a guitar shop creates packages of gear based on a genre.
+    /// </summary>
+
     public class Application
     {
         private IGenreFactory _genreFactory;
