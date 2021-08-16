@@ -36,7 +36,7 @@ namespace Refactoring.Guru.DesignPatterns.Tests.Prototype
             g1.Pickups.Quantity = 3;
 
             //assert
-            Assert.AreEqual(g1.Pickups.Quantity, g2.Pickups.Quantity);
+            Assert.AreEqual(g1.Pickups, g2.Pickups); //should reference same object
         }
     }
 }

@@ -17,10 +17,9 @@ namespace Refactoring.Guru.DesignPatterns.Tests.Prototype
 
             //act
             var g2 = g1.DeepCopy();
-            g1.Pickups.Quantity = 3; //change source object
 
             //assert
-            Assert.AreNotEqual(g1.Pickups.Quantity, g2.Pickups.Quantity);
+            Assert.AreNotEqual(g1.Pickups, g2.Pickups); //should reference different objects
         }
     }
 }
